@@ -252,15 +252,15 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return articles;
     }
 
-    public String getUserNameById(int id) {
+    public String getUserNameById(String pseudo) {
         SQLiteDatabase db = this.getReadableDatabase();
         String userName = "";
 
         // Sélectionner le prénom et le nom de l'utilisateur en fonction de l'id
         String selectQuery = "SELECT " + COLUMN_UTILISATEUR_PRENOM + ", " + COLUMN_UTILISATEUR_NOM +
                 " FROM " + TABLE_UTILISATEUR +
-                " WHERE " + COLUMN_UTILISATEUR_ID + " = ?";
-        Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(id)});
+                " WHERE " + COLUMN_UTILISATEUR_PSEUDO + " = ?";
+        Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(pseudo)});
 
         // Vérifier si le curseur contient des données
         if (cursor.moveToFirst()) {

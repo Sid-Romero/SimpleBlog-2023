@@ -57,12 +57,14 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
             public void onClick(View view) {
 
                 // Récupérer les informations de l'article
+                System.out.println("L'id : "+article.getId());
                 String titre = article.getTitre();
                 String datePublication = article.getDatePublication();
                 System.out.println(datePublication);
                 datePublication = formatDateTime(datePublication);
                 System.out.println(datePublication);
-                String auteur = dbHelper.getUserNameById(article.getId());
+                String auteur = dbHelper.getUserNameById(article.getUserPseudo());
+                System.out.println("L'auteur : " +auteur);
                 String contenu = article.getContenu();
 
                 // Créer l'intent pour démarrer l'activité DetailArticleActivity
