@@ -1,0 +1,37 @@
+<!-- item_article.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_bg">
+
+    <TextView
+        android:id="@+id/articleTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Article"
+        android:textStyle="bold" />
+
+    <!--
+    <TextView
+        android:id="@+id/articleIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="id" /> -->
+
+    <TextView
+        android:id="@+id/articleContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="25dp"
+        android:text="Contenu" />
+
+</LinearLayout>

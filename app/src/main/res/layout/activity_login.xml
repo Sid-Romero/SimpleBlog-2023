@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EFEDED">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:background="#EFEDED"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="50dp"
+        />
+
+    <EditText
+        android:id="@+id/Loginusername"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Pseudo"
+        android:textSize="24sp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/Loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Mot de passe"
+        android:layout_marginTop="52dp"
+        android:textSize="24sp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"/>
+
+    <Button
+        style="@style/Button.SimpleBlog"
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop = "44dp"
+        android:background="@drawable/edittext_border"
+        android:text="Se connecter"
+        android:textColor="#FFF"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous n'avez pas de compte ?"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        style="@style/Button.SimpleBlog"
+        android:id="@+id/btn_to_signin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_border"
+        android:text="Inscrivez-vous"
+        android:textColor="#FFF"
+        />
+
+
+
+</LinearLayout>
